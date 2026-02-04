@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Aether Particles | Hand Gestures</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video id="video" autoplay playsinline muted></video>
+  <canvas id="particleCanvas"></canvas>
+
+  <div id="ui">
+    <div id="status">Tap ▶️ Start Camera</div>
+    <div id="gesture">Gesture: —</div>
+    <div id="controls">
+      <button onclick="requestCamera()">▶️ Start</button>
+      <button onclick="togglePause()">⏸️ Pause</button>
+    </div>
+  </div>
+
+  <!-- Handtrack.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/handtrackjs@1.1.0/dist/handtrack.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
